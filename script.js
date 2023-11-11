@@ -16,7 +16,7 @@ function checkAnswer(selectedNote) {
     const isCorrect = selectedNote === currentQuestion.answer;
     resultEl.textContent = isCorrect ? `正解！ 正解は ${currentQuestion.answer}` : `不正解！ 正解は ${currentQuestion.answer}`;
     resultEl.style.color = isCorrect ? 'green' : 'red';
-    setTimeout(generateQuestion, 2000); // 少し長めの間隔で次の問題へ移行
+    setTimeout(generateQuestion, 2000);
 }
 
 function setupChoices() {
